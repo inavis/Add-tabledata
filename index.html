@@ -28,9 +28,9 @@
     /> -->
       
   <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   
-   -->
+  
    
     <link rel = "stylesheet" href="style.css">  
  
@@ -101,23 +101,23 @@ th{
 
 
 <section class="" style="margin-left:35%;">
-  <table style="border:1px solid blue">
+  <table style="border:1px solid blue p-5">
   
     <tr>
-      <th>Full name</th>
-      <td><input type="text" id="fname"/></td>
+      <th >Full name</th>
+      <td ><input type="text" id="fname" required/></td>
     </tr>
     <tr>
-      <th>Last name</th>
-      <td><input type="text" id="lname"/></td>
+      <th >Last name</th>
+      <td  ><input type="text" id="lname" required/></td>
     </tr>
     <tr>
-      <th>Email</th>
-      <td><input type="email" id="emailid"/></td>
+      <th >Email</th>
+      <td ><input type="email" id="emailid" required/></td>
     </tr>
     <tr>
-      <th>Age</th>
-      <td><input type="number" id="age"/></td>
+      <th >Age</th>
+      <td><input type="number" id="age" required/></td>
     </tr>
     <tr >
       <td colspan="2"><button onclick="addrow()" style="width: 100%;">ADD</button></td>
@@ -127,13 +127,13 @@ th{
 
 <br><br>
 
-<table>
+<table >
   <thead>
     <tr>
-      <th>Full Name</th>
-      <th>Last name</th>
-      <th>Enail</th>
-      <th>Age</th>
+      <th class="p-3">Full Name</th>
+      <th class="p-3">Last name</th>
+      <th class="p-3">Email</th>
+      <th class="p-3">Age</th>
     </tr>
   </thead>
   <tbody id="table-body">

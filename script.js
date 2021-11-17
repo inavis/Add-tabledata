@@ -173,15 +173,21 @@ let addrow = () => {
   let age = document.querySelector("#age").value;
   console.log(fname,lname,emailid,age)
 
-  let tbody = document.querySelector("#table-body");
+  if(fname.length>0 && lname.length>0 && emailid.length>0 && age.length>0){
+    let tbody = document.querySelector("#table-body");
 
-  let trow = `
-  <tr>
-  <td>${fname}</td>
-  <td>${lname}</td>
-  <td>${emailid}</td>
-  <td>${age}</td>
-  </tr>
-  `
-  tbody.innerHTML+=trow;
+    let trow = `
+    <tr>
+    <td>${fname}</td>
+    <td>${lname}</td>
+    <td>${emailid}</td>
+    <td>${age}</td>
+    </tr>
+    `
+    tbody.innerHTML+=trow;
+  }else{
+    alert("Enter all the data to proceed")
+  }
+
+ 
 };
